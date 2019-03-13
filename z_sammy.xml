@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="carbon-fusion"
-    fetch="https://github.com/nailyk-fr" />
+    fetch="ssh://code.binbash.it:22443/mva-volte" />
 
   <project name="android_device_samsung_j5y17lte" path="device/samsung/j5y17lte" remote="carbon-fusion" revision="lineage-15.1" />
   <project name="android_device_samsung_exynos7870-common" path="device/samsung/exynos7870-common" remote="carbon-fusion" revision="lineage-15.1" />
