@@ -6,7 +6,7 @@
 
   <project name="android_device_samsung_j5y17lte" path="device/samsung/j5y17lte" remote="carbon-fusion" revision="lineage-15.1" />
   <project name="android_device_samsung_exynos7870-common" path="device/samsung/exynos7870-common" remote="carbon-fusion" revision="lineage-15.1" />
-  <project name="android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="carbon-fusion" revision="master" />
+  <project name="android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="carbon-fusion" revision="lineage-15.1" />
   <project name="android_vendor_samsung" path="vendor/samsung" remote="carbon-fusion" revision="lineage-15.1" />
   <project name="LineageOS/android_hardware_samsung" path="hardware/samsung" remote="github" />
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" />
