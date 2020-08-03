@@ -1,21 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="carbon-fusion"
-    fetch="ssh://code.binbash.it:22443/mva-volte" />
+  <remote  
+        name="codebbr"
+        fetch="ssh://code.binbash.rocks:22443/mva-volte"
+        revision="lineage-15.1" />
 
-  <project name="android_device_samsung_j5y17lte" path="device/samsung/j5y17lte" remote="carbon-fusion" revision="lineage-15.1" />
-  <project name="android_device_samsung_exynos7870-common" path="device/samsung/exynos7870-common" remote="carbon-fusion" revision="lineage-15.1" />
-  <project name="android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="carbon-fusion" revision="lineage-15.1" />
-  <project name="android_vendor_samsung" path="vendor/samsung" remote="carbon-fusion" revision="lineage-15.1" />
-  <project name="nailyk-fr/android_hardware_samsung" path="hardware/samsung" remote="github" />
+  <remote  
+        name="codebbr-http"
+        fetch="https://code.binbash.rocks:8443/MVA-VoLTE"
+        revision="lineage-15.1" />
+
+
+  <!-- REMOVALS (must be at TOP)
+  #####################################################-->
   <remove-project path="hardware/ril" name="LineageOS/android_hardware_ril" groups="pdk" />
-  <project name="Exynos7870/android_hardware_ril" path="hardware/ril" remote="github" revision="o8x"/>
+
+  <!-- KERNEL
+  #####################################################-->
+  <project name="android_kernel_samsung_exynos7870" path="kernel/samsung/exynos7870" remote="codebbr" />
+
+  <!-- DEVICE TREES
+  #####################################################-->
+  <project name="android_device_samsung_j5y17lte" path="device/samsung/j5y17lte" remote="codebbr" />
+  <project name="android_device_samsung_exynos7870-common" path="device/samsung/exynos7870-common" remote="codebbr" />
+
+  <!-- LOS STUFF
+  #####################################################-->
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" />
 
+  <!-- MISC
+  #####################################################-->
+  <!-- Vendor -->
+  <project name="android_vendor_samsung" path="vendor/samsung" remote="codebbr" />
 
-  <project name="android_hardware_samsung_slsi-cm_exynos5" path="hardware/samsung_slsi-cm/exynos5" remote="carbon-fusion" revision="lineage-15.1" />
-  <project name="android_hardware_samsung_slsi-cm_exynos7870" path="hardware/samsung_slsi-cm/exynos7870" remote="carbon-fusion" revision="lineage-15.1" />
-  <project name="android_hardware_samsung_slsi-cm_exynos" path="hardware/samsung_slsi-cm/exynos" remote="carbon-fusion" revision="lineage-15.1" />
-  <project name="android_hardware_samsung_slsi-cm_openmax" path="hardware/samsung_slsi-cm/openmax" remote="carbon-fusion" revision="lineage-15.1" />
+  <!-- Hardware -->
+  <project name="android_hardware_samsung" path="hardware/samsung" remote="codebbr" />
+  <project name="Exynos7870/android_hardware_ril" path="hardware/ril" remote="github" revision="o8x"/>
+  <project name="android_hardware_samsung_slsi-cm_exynos5" path="hardware/samsung_slsi-cm/exynos5" remote="codebbr" />
+  <project name="android_hardware_samsung_slsi-cm_exynos7870" path="hardware/samsung_slsi-cm/exynos7870" remote="codebbr" />
+  <project name="android_hardware_samsung_slsi-cm_exynos" path="hardware/samsung_slsi-cm/exynos" remote="codebbr" />
+  <project name="android_hardware_samsung_slsi-cm_openmax" path="hardware/samsung_slsi-cm/openmax" remote="codebbr" />
+
 </manifest>
