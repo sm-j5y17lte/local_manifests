@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  
-        name="codebbr"
-        fetch="ssh://code.binbash.rocks:22443/mva-volte"
-        revision="lineage-15.1" />
-
-  <remote  
-        name="codebbr-http"
-        fetch="https://code.binbash.rocks:8443/MVA-VoLTE"
-        revision="lineage-15.1" />
-
-
   <!-- REMOVALS (must be at TOP)
   #####################################################-->
   <remove-project path="hardware/ril" name="LineageOS/android_hardware_ril" groups="pdk" />
