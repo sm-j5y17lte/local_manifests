@@ -11,7 +11,7 @@
 
   <!-- DEVICE TREES
   #####################################################-->
-  <project name="android_device_samsung_j5y17lte" path="device/samsung/j5y17lte" remote="codebbr" />
+  <project name="android_device_samsung_j5y17lte" path="device/samsung/j5y17lte" remote="codebbr" revision="eos-oreo" />
   <project name="android_device_samsung_exynos7870-common" path="device/samsung/exynos7870-common" remote="codebbr" />
 
   <!-- LOS STUFF
