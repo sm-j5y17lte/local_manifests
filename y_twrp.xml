@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
+<!-- DISABLED FOR THE MOMENT !
+
     <remove-project name="e/os/android_bootable_recovery" />
     <project path="bootable/recovery" name="TeamWin/android_bootable_recovery"  remote="github" revision="android-9.0" />
+-->
+
 </manifest>
