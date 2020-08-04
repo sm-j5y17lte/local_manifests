@@ -8,7 +8,7 @@
   <!-- MISC
   #####################################################-->
   <!-- FDroid -->
-  <project name="android_vendor_fdroid" path="vendor/fdroid" remote="suicide" revision="master" />
+  <project name="android_vendor_fdroid" path="vendor/fdroid" remote="suicide" revision="eos" />
 
   <!-- /e/ -->
   <project path="vendor/e" name="steadfasterX/android_vendor_e" remote="e" revision="main" />
